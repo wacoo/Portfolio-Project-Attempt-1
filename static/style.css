@@ -8,38 +8,57 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
 }
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 98vh;
-  background-color: #1c1a19;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+.sec_headline {
+  height: 100vh;
+  margin-top: 10px;
+
   background-image: url(/static/images/des.png);
   background-repeat: no-repeat;
-  background-position: bottom -45px right;
+  background-position: right 50vh;
+  background-color: #1c1a19;
 }
 
+.sec_myworks {  
+  color: #1c1a19;
+  background: #e5e5e5;
+}
 @media (min-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 98vh;
-    background-color: #1c1a19;
+    width: 500vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    background-position: right;
     background-size: 25vw;
   }
+  .sec_headline {
+    height: 100vh;
+    margin-top: 10px;
+    background-image: url(/static/images/des.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25vw;     
+    background-color: #1c1a19;
+  }
 }
-
+.sec_myworks {
+  display:grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+}
 .head {
   display: flex;
   justify-content: space-between;
@@ -71,18 +90,18 @@ body {
   color: #fff;
 }
 
-.content {
+.content-1 {
   width: 80vw;
   padding-top: 120px;
   padding-left: 30px;
   padding-right: 50px;
 }
-
 .description {
   margin-top: 10px;
 }
 
 .description p {
+  width: 87%;
   font-size: 16px;
   font-family: 'Popins', Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
@@ -111,4 +130,147 @@ body {
 .social ul li {
   display: inline-block;
   padding: 2%;
+}
+
+/* Section 2 */
+.content-2 {
+  background-color: #fff;
+}
+.content-2 .title{
+  display: flex;
+  width: 87.2vw;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #1c1a19 solid 2px;
+}
+
+.content-2 .img_placeholder {
+  width: 87.2vw;
+  padding-top: 10vh;
+}
+
+.content-2 .img_placeholder img {
+  width: 87.2vw;
+}
+
+.content-2 .summary {
+  width: 87.2vw;
+  padding-top: 20px;
+}
+.content-2 .title h1 {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.content-2 .summary h2 {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.content-2 .summary {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.buttons-1 ul {
+  display: flex;
+  margin-top: 10px;
+}
+
+.buttons-1 ul li {
+  margin-right: 10px;  
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  list-style-type: none;
+  border: #1c1a19 1px solid;
+}
+.see {
+  margin-top: 15px;
+}
+.btn_see_proj {
+ color: #fff;
+ padding: 10px;
+ background-color: #ff6b00;
+ font-size: 17px;
+ font-weight: 700;
+ border: 0;
+ font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+.show_case {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 87.2vw;
+  height: 100vh;
+  background-image: url(/static/images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.show_case h2 {
+  padding-left: 10px;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+.show_case p {
+  width: 65vw;
+  padding-left: 10px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.show_case ul {
+  padding-left: 10px;
+}
+.button_width {
+  width: 100%;
+}
+.button_color {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.show_case h2, .show_case p {
+  color: #fff;
+}
+
+/* About Section */
+.about{
+  width: 87.2vw;
+  height: 100vh;
+  margin-top: 120px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #1c1a19;
+  
+  background-image: url(/static/images/art.png);
+  background-repeat: no-repeat;
+  background-position: right 60vh;
+}
+.about .about_summary {
+  width: 70vw;
+}
+.about .about_summary h1 {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #ff6b00;
+}
+.about .about_summary p {
+  width: 68vw;
+  padding-left: 10px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.about .about_summary .see {
+  margin-left: 10px;
 }
