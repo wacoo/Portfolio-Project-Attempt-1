@@ -91,9 +91,11 @@ body {
 .menu img:hover {
   background-color: gray;
 }
+
 .menu {
   margin-right: 20px;
 }
+
 .social {
   width: 60%;
   display: flex;
