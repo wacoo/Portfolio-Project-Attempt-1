@@ -23,16 +23,10 @@ body {
 .sec_headline {
   height: 590px;
   margin-top: 10px;
-
   background-image: url(/static/images/des.png);
   background-repeat: no-repeat;
   background-position: right 50vh;
   background-color: #1c1a19;
-}
-
-.sec_myworks {
-  color: #1c1a19;
-  background: #e5e5e5;
 }
 
 @media (min-width: 768px) {
@@ -58,6 +52,8 @@ body {
 }
 
 .sec_myworks {
+  color: #1c1a19;
+  background: #e5e5e5;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -176,6 +172,10 @@ body {
   padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.7px;
 }
 
 .content-2 .title h1 {
@@ -187,14 +187,6 @@ body {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-size: 32px;
 }
-
-.content-2 .summary {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  letter-spacing: 0.7px;
-}
-
 .buttons-1 ul {
   display: flex;
   margin-top: 10px;
@@ -236,7 +228,7 @@ body {
   background-size: cover;
 }
 
-.show_case h2 {
+.sec_myworks .show_case h2 {
   padding-left: 10px;
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-size: 32px;
@@ -298,6 +290,15 @@ body {
   color: #ff6b00;
 }
 
+.contact_form div p {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 700;
+  color: #1c1a19;
+  text-align: center;
+}
+
 .about .about_summary p {
   width: 68vw;
   padding-left: 10px;
@@ -347,22 +348,27 @@ body {
   font-family: 'InaiMathi', Arial, Helvetica, sans-serif;
 }
 
-.languages ul li.prog_lg:before {
+.languages ul li.prog_lg::before {
   content: '\2666';
   color: #ff6b00;
   font-size: 25px;
 }
 
-.languages ul li.frameworks:before {
+.languages ul li.frameworks::before {
   content: '\25AA';
   color: #ff6b00;
   font-size: 35px;
 }
 
-.languages ul li.skills:before {
+.languages ul li.skills::before {
   content: '\2022';
   color: #ff6b00;
   font-size: 35px;
+}
+
+.fsocial ul li {
+  display: inline-block;
+  padding: 20px;
 }
 
 .languages ul li ul li {
@@ -385,18 +391,8 @@ body {
   background-color: #fff;
 }
 
-.contact_form div p {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  line-height: normal;
-  font-weight: 700;
-  color: #1c1a19;
-  text-align: center;
-}
-
 .contact_form div {
   height: 100%;
-  ;
   margin: 30px;
 }
 
@@ -409,7 +405,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
 
 .contact_form .form form input {
@@ -462,12 +457,6 @@ button:hover {
   width: 90%;
   list-style-type: none;
 }
-
-.fsocial ul li {
-  display: inline-block;
-  padding: 20px;
-}
-
 .fsocial .separator_line {
   width: 35%;
   height: 5px;
