@@ -53,6 +53,7 @@ body {
 }
 
 .sec_myworks {
+  width: 100vw;
   color: #1c1a19;
   display: grid;
   grid-template-columns: auto;
@@ -233,13 +234,15 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
-.btn_see_proj:hover,  .btn_get_in_thouch:hover{
+.btn_see_proj:hover,
+.btn_get_in_thouch:hover {
   background-color: #fff5e1;
   color: #ff6b00;
   border: #ff6b00 solid 1px;
 }
 
-.btn_see_proj:active, .btn_get_in_thouch:active{
+.btn_see_proj:active,
+.btn_get_in_thouch:active {
   color: #f4f1f0;
   border: #ff6b00 solid 1px;
   background-color: #e05304;
