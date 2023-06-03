@@ -187,6 +187,7 @@ body {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-size: 32px;
 }
+
 .buttons-1 ul {
   display: flex;
   margin-top: 10px;
@@ -457,6 +458,7 @@ button:hover {
   width: 90%;
   list-style-type: none;
 }
+
 .fsocial .separator_line {
   width: 35%;
   height: 5px;
