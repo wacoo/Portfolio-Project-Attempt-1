@@ -149,7 +149,6 @@ body {
 
 .content-2 div .title {
   display: flex;
-
   height: 150px;
   margin: 27px;
   align-items: center;
@@ -162,7 +161,7 @@ body {
 }
 
 .content-2 div .summary {
-  display:flex;
+  display: flex;
   justify-content: left;
   padding-top: 20px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -248,8 +247,19 @@ body {
   margin-bottom: 20px;
 }
 
+.languages ul {
+  text-align: center;
+  list-style-type: none;
+}
+
 .show_case ul {
   padding-left: 10px;
+}
+
+.fsocial ul {
+  text-align: center;
+  width: 98%;
+  list-style-type: none;
 }
 
 .show_case .buttons-1 ul {
@@ -292,24 +302,6 @@ body {
   padding-bottom: 70px;
 }
 
-.about .about_summary p {
-  min-width: 327px;
-  color: #fff;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: normal;
-}
-
-.about .about_summary h1 {
-  width: 327px;
-  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  color: #ff6b00;
-  padding-left: 5px;
-  margin-bottom: 10px;
-}
-
 .contact_form div p {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 32px;
@@ -321,11 +313,23 @@ body {
 
 .about .about_summary p {
   width: 68vw;
+  min-width: 327px;
+  color: #fff;
   padding-left: 10px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: normal;
   margin-bottom: 25px;
+}
+
+.about .about_summary h1 {
+  width: 327px;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #ff6b00;
+  padding-left: 5px;
+  margin-bottom: 10px;
 }
 
 .about .about_summary .see {
@@ -346,11 +350,6 @@ body {
 
 .languages .lg {
   border: #ff6b00 solid 5px;
-}
-
-.languages ul {
-  text-align: center;
-  list-style-type: none;
 }
 
 .languages ul li {
@@ -459,11 +458,9 @@ button:hover {
 }
 
 button:active {
-  background-color: #fff5e1;
-  color: #f4f1F0;
+  color: #f4f1f0;
   border: #ff6b00 solid 1px;
-  background: #e05304;;
-
+  background-color: #e05304;
 }
 
 .foot_social {
@@ -477,12 +474,6 @@ button:active {
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
-}
-
-.fsocial ul {
-  text-align: center;
-  width: 98%;
-  list-style-type: none;
 }
 
 .fsocial .separator_line {
