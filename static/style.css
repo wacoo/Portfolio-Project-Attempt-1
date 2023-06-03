@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-width: 375px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -82,6 +83,10 @@ body {
   font-size: 56px;
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   color: #ff6b00;
+}
+
+.name {
+  width: 327px;
 }
 
 .name h3 {
@@ -216,6 +221,28 @@ body {
   font-weight: 700;
   border: 0;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.btn_get_in_thouch {
+  color: #fff;
+  padding: 10px;
+  background-color: #ff6b00;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.btn_see_proj:hover,  .btn_get_in_thouch:hover{
+  background-color: #fff5e1;
+  color: #ff6b00;
+  border: #ff6b00 solid 1px;
+}
+
+.btn_see_proj:active, .btn_get_in_thouch:active{
+  color: #f4f1f0;
+  border: #ff6b00 solid 1px;
+  background-color: #e05304;
 }
 
 .show_case {
@@ -439,28 +466,6 @@ body {
   margin: 20px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 16px;
-}
-
-.btn_get_in_thouch {
-  color: #fff;
-  padding: 10px;
-  background-color: #ff6b00;
-  font-size: 17px;
-  font-weight: 700;
-  border: 0;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-}
-
-button:hover {
-  background-color: #fff5e1;
-  color: #ff6b00;
-  border: #ff6b00 solid 1px;
-}
-
-button:active {
-  color: #f4f1f0;
-  border: #ff6b00 solid 1px;
-  background-color: #e05304;
 }
 
 .foot_social {
